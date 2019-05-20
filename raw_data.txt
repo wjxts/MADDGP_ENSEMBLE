@@ -1,0 +1,33 @@
+episode num = 60000
+
+Ensemble_num(K)
+Physical deception: 3
+Keep-away: 3
+Predator-prey: 2
+
+adv num = 1 is the same for all
+
+Ens Vs Single: (agent Vs adv)
+
+Physical deception:3.566 [-14.15,8.97,8.97]  mean rew ; [adv;agent;agent]
+Keep-away:-9.41 [-1.98,-7.42]                mean rew; [adv;agent]
+Predator-prey: 11.01 [7.14,7.14,7.14,-10.09] mean rew; [adv;adv;adv;agent]
+
+Ens Vs Ens:
+
+Physical deception:0.66 [-12.5 6.5 6.5]
+Keep-away: -10.3 [-1.9 -8.38]
+Predator-prey:18.4 [11.9 11.9 11.9 -18.68]
+
+
+Single Vs Single:
+
+Physical deception:3.62 [-13.42 8.49 8.49]
+Keep-away: -8.47 [-1.21 -7.23]
+Predator-prey: 17.97 [11.05 11.05 11.05 -15.17]
+
+Single Vs Ens:
+
+Physical deception:1.96 [-12.46 7.21 7.21]
+Keep-away: -11.7 [-4.18 -7.53]
+Predator-prey: 11.00 [7.8 7.8 7.8 -12.39]

@@ -1,0 +1,21 @@
+Challenges:
+Not familiar with RL algorithm
+
+Efforts: 
+1、Learn Q-learning, DQN, PG, Actor-Critic, DDPG briefly.  
+2、Grasp the basic idea of MADDPG
+3、Read the code and make some annotation
+4、Change the single policy to a list of policies in the class   
+
+What I have learned in detail
+Q-learing: discrete action space. learn the Q function(a table)
+
+DQN: use a network to replace the table of Q function. use two networks to make the training process stable. we only train one network and copy the training network to target network after a certain number of steps 
+
+PG(not know confidently): the output of the network is the prob of the action.we can use -logP*rew as the loss function. when rew>0 we want P to be larger and when rew<0 we want P to be smaller which coinsides with the loss function
+
+AC:one network Q is responsible for estimate Q function and the other network A is in charge of taing action.The Q updates according to MSE of the reward(the output of Q tries to estimate the reward of the action), the A updates the para similar to PG
+
+DDPG:DQN+AC. sustitute the critic with DQN
+
+MADDPG:one critic and many actors.
