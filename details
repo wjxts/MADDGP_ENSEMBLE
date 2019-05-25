@@ -1,1 +1,14 @@
+1、How I implement the algorithm    
+in the class MADDPGAgentTrainer, I extend act, p_train, p_update, p_debug, replay_buffer to a list, i.e., I create K sub-policies. 
+each sub-policy has a different variable scope. I also set a varible 'current_subpolicy_index' to indicate the current subpolicy 
+and change it after every epoch. In the update part, I only refresh the parameter of the current sub-policy, which can be done by using
+the index of 'current_subpolicy_index'. 
+
+I find that there are two points I forgot.    
+1、enforce the agent to have the same policy after each epoch(is this necessary?).
+2、I only collect the experience of current sub-policies instead of all sub-policies.
+
+
+
+
 
